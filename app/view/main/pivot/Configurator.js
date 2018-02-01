@@ -10,9 +10,11 @@ Ext.define('PivotExample.view.main.pivot.Configurator', {
     controller: 'pivotconfig',
 
     requires: [
+        'Ext.pivot.Grid',
         'PivotExample.view.main.pivot.ConfiguratorController',
         'PivotExample.store.pivot.Sales',
-        'Ext.pivot.plugin.Configurator'
+        'Ext.pivot.plugin.Configurator',
+        'Ext.grid.selection.SpreadsheetModel'
     ],
 
     title: 'Pivot Grid with Configurator plugin',
